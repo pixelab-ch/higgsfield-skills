@@ -76,4 +76,34 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 
 | REQ-ID | Phase | Status |
 |--------|-------|--------|
-| (filled by roadmap) | | |
+| INFRA-01 | Phase 1 | Pending |
+| INFRA-02 | Phase 1 | Pending |
+| INFRA-03 | Phase 1 | Pending |
+| INFRA-04 | Phase 1 | Pending |
+| INFRA-05 | Phase 1 | Pending |
+| STRUCT-04 | Phase 1 | Pending |
+| I18N-01 | Phase 1 | Pending |
+| STRUCT-01 | Phase 2 | Pending |
+| STRUCT-02 | Phase 2 | Pending |
+| STRUCT-03 | Phase 2 | Pending |
+| MODEL-01 | Phase 2 | Pending |
+| MODEL-02 | Phase 2 | Pending |
+| MODEL-03 | Phase 2 | Pending |
+| MODEL-04 | Phase 2 | Pending |
+| MODEL-05 | Phase 2 | Pending |
+| MODEL-06 | Phase 2 | Pending |
+| GEN-01 | Phase 2 | Pending |
+| GEN-02 | Phase 2 | Pending |
+| GEN-03 | Phase 2 | Pending |
+| GEN-05 | Phase 2 | Pending |
+| SPEC-01 | Phase 2 | Pending |
+| GEN-04 | Phase 3 | Pending |
+| PKG-01 | Phase 4 | Pending |
+| PKG-02 | Phase 4 | Pending |
+| PKG-03 | Phase 4 | Pending |
+| PKG-04 | Phase 4 | Pending |
+| I18N-02 | Phase 4 | Pending |
+| I18N-03 | Phase 4 | Pending |
+| SPEC-02 | Phase 5 | Pending |
+| DOC-01 | Phase 5 | Pending |
+| DOC-02 | Phase 5 | Pending |
