@@ -28,8 +28,11 @@
   2. `shared/generation-flow.md` documents the complete opt-in generation workflow (resolve model → build prompt → confirm with credit cost → generate → poll job_status → display), including the conditional media_upload branch for I2V skills
   3. `shared/mcp-tools.md` documents every relevant Higgsfield MCP tool with its fully-qualified name (`higgsfield:tool_name` in prose, `mcp__higgsfield__tool_name` in allowed-tools), signatures, and credit-cost notes
   4. A real `LICENSE` file exists at repo root; README.md contains no references to `LICENSE` or `logs.md` that do not correspond to real files
-  5. All zh-CN translation directories are deleted; all 15 skill frontmatter entries conform to the STRUCT-04 format (name ≤64 chars lowercase-hyphens, description ≤1024 chars third-person with "Use when…" triggers)
-**Plans**: TBD
+  5. All zh-CN translation directories are deleted; the STRUCT-04 frontmatter standard (name ≤64 chars lowercase-hyphens unique across EN+FR, description ≤1024 chars third-person with "Use when…" triggers) is documented in shared/skill-template.md (per-skill frontmatter rewriting to this standard happens in Phases 2-3)
+**Plans**: 3 plans
+- [ ] 01-01-PLAN.md — Create shared/ + model-catalog.md + skill-template.md (INFRA-01, INFRA-02, STRUCT-04) [wave 1]
+- [ ] 01-02-PLAN.md — Write shared/mcp-tools.md + generation-flow.md (INFRA-04, INFRA-03) [wave 2]
+- [ ] 01-03-PLAN.md — LICENSE + README/CONTRIBUTING cleanup + zh-CN removal (INFRA-05, I18N-01) [wave 1]
 
 ### Phase 2: Pilot Skill (01-cinematic) End-to-End
 **Goal**: One skill — 01-cinematic — is fully rearchitected as the reference implementation that proves the SKILL.md template, progressive disclosure, FR variant, and generation loop before they replicate across 14 more skills
@@ -83,7 +86,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Shared Infrastructure + Repo Hygiene | 0/? | Not started | - |
+| 1. Shared Infrastructure + Repo Hygiene | 0/3 | Not started | - |
 | 2. Pilot Skill (01-cinematic) End-to-End | 0/? | Not started | - |
 | 3. Bulk Refactor — Remaining 14 Skills | 0/? | Not started | - |
 | 4. Install Script + FR i18n Polish | 0/? | Not started | - |
