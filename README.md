@@ -1,4 +1,4 @@
-🌐 **English / 简体中文** | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Türkçe](README.tr.md) | [繁體中文](README.zh-TW.md)
+🌐 **English** | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Türkçe](README.tr.md)
 
 ---
 
@@ -80,7 +80,6 @@
 | 14 | [美食饮品 Food & Beverage](skills/14-food-beverage/SKILL.md) | 美食 — 餐厅、食谱、ASMR、食欲诱惑 | Food — restaurant, recipe, ASMR, appetite appeal |
 | 15 | [房地产 Real Estate](skills/15-real-estate/SKILL.md) | 房产 — 房屋参观、建筑、室内设计 | Property — tours, architecture, interior design |
 
-> 📝 每个技能都有中文版本 Each skill has a Chinese version: `skills/XX-name/zh-CN/SKILL.md`
 
 ---
 
@@ -127,11 +126,9 @@ Claude (使用电影技能 with cinematic skill):
 higgsfield-seedance2-jineng/
 ├── README.md                          # 双语说明 Bilingual readme (this file)
 ├── LICENSE
-├── logs.md                            # 构建日志 Build log
 └── skills/
     ├── 01-cinematic/
-    │   ├── SKILL.md                   # English
-    │   └── zh-CN/SKILL.md            # 简体中文
+    │   └── SKILL.md
     ├── 02-3d-cgi/
     ├── 03-cartoon/
     ├── 04-comic-to-video/
@@ -146,8 +143,7 @@ higgsfield-seedance2-jineng/
     ├── 13-fashion-lookbook/
     ├── 14-food-beverage/
     └── 15-real-estate/
-        ├── SKILL.md
-        └── zh-CN/SKILL.md
+        └── SKILL.md
 ```
 
 ---
@@ -155,9 +151,8 @@ higgsfield-seedance2-jineng/
 ## 📊 统计 Stats
 
 - **技能数量 Skills:** 15
-- **文件总数 Total files:** 30 个 SKILL.md (15 EN + 15 ZH)
-- **总行数 Total lines:** 31,725
-- **语言 Languages:** English + 简体中文
+- **文件总数 Total files:** 15 SKILL.md
+- **语言 Languages:** English
 
 ---
 
@@ -168,8 +163,7 @@ higgsfield-seedance2-jineng/
 1. 遵循 SKILL.md 格式 | Follow SKILL.md format (YAML frontmatter + content)
 2. 包含 2 秒钩子框架 | Include the 2-Second Hook Framework
 3. 包含 5+ 大型示例 | Include 5+ large example prompts
-4. 提供英文和中文版本 | Provide English + Chinese versions
-5. 在 [Seedance 2.0（Higgsfield）](https://higgsfield.ai/create/video?model=seedance_2_0) 上测试 | Test on Seedance 2.0 on Higgsfield
+4. 在 [Seedance 2.0（Higgsfield）](https://higgsfield.ai/create/video?model=seedance_2_0) 上测试 | Test on Seedance 2.0 on Higgsfield
 
 ---
 

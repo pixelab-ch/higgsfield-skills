@@ -14,8 +14,7 @@ Each skill is a `SKILL.md` file that must include:
 
 ```
 skill-name/
-├── SKILL.md           # English version
-└── zh-CN/SKILL.md     # 简体中文 version
+└── SKILL.md           # English version
 ```
 
 #### 必须包含的部分 Required Sections
@@ -40,7 +39,7 @@ skill-name/
 - **每次提到 Seedance 2.0 必须包含 Higgsfield** | Every mention of Seedance 2.0 must include Higgsfield
 - **技能应该足够大** — 目标 400+ 行 | Skills should be large — target 400+ lines
 - **示例必须可实际使用** — 不要写通用占位符 | Examples must be production-ready, not generic placeholders
-- **提供双语版本** — English + 简体中文 | Provide bilingual versions
+- **English only for now** (French variants added later)
 
 ### 2. 改进现有技能 Improve Existing Skills
 
