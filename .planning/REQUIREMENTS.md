@@ -6,8 +6,8 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 
 ### Shared Infrastructure (INFRA)
 
-- [ ] **INFRA-01**: A `shared/` directory exists at repo root holding cross-cutting references that every skill links to via relative path (cross-skill SKILL.md references don't work because skills load independently)
-- [ ] **INFRA-02**: `shared/model-catalog.md` documents the Higgsfield image + video model catalog (IDs, params, aspect ratios, durations, media roles) with a "last verified" date, sourced from `models_explore`
+- [x] **INFRA-01**: A `shared/` directory exists at repo root holding cross-cutting references that every skill links to via relative path (cross-skill SKILL.md references don't work because skills load independently)
+- [x] **INFRA-02**: `shared/model-catalog.md` documents the Higgsfield image + video model catalog (IDs, params, aspect ratios, durations, media roles) with a "last verified" date, sourced from `models_explore`
 - [ ] **INFRA-03**: `shared/generation-flow.md` documents the canonical opt-in flow (resolve model → confirm prompt+params+credit cost → generate → poll `job_status` → present `job_display`) reused by all skills
 - [ ] **INFRA-04**: `shared/mcp-tools.md` documents the relevant Higgsfield MCP tools and the correct naming (`higgsfield:tool` in prose, `mcp__higgsfield__tool` in `allowed-tools`)
 - [ ] **INFRA-05**: A real `LICENSE` file exists at repo root and is referenced accurately by README/CONTRIBUTING
@@ -17,7 +17,7 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 - [ ] **STRUCT-01**: Every `SKILL.md` body is ≤ 500 lines (Agent Skills hard cap)
 - [ ] **STRUCT-02**: Each skill keeps a lean `SKILL.md` (when-to-use, model routing summary, generation workflow) and moves encyclopedic content to one-level-deep `references/*.md` files
 - [ ] **STRUCT-03**: A documented SKILL.md template + decomposition pattern is validated on one pilot skill (01-cinematic) before being applied to the rest
-- [ ] **STRUCT-04**: Frontmatter follows the format (`name` ≤64 chars lowercase-hyphens, `description` ≤1024 chars third-person with "Use when…" triggers); each skill name is unique across EN and FR variants
+- [x] **STRUCT-04**: Frontmatter follows the format (`name` ≤64 chars lowercase-hyphens, `description` ≤1024 chars third-person with "Use when…" triggers); each skill name is unique across EN and FR variants
 
 ### Model Awareness (MODEL)
 
