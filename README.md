@@ -223,3 +223,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full contributor guide.
 - [Higgsfield](https://higgsfield.ai) — Platform home
 - [Higgsfield MCP](https://higgsfield.ai/mcp) — MCP server setup
 - [X @higgsfield](https://x.com/higgsfield) — Updates and releases
+
+---
+
+## License & Credits
+
+Released under the [MIT License](LICENSE).
+
+We took the prompt-engineering skill collection
+[`beshuaxian/higgsfield-seedance2-jineng`](https://github.com/beshuaxian/higgsfield-seedance2-jineng)
+and reworked it to fit our own needs. The original creative prompt content was the starting
+point; from there the project was substantially rebuilt — model-aware routing across the full
+Higgsfield ecosystem, opt-in MCP generation, progressive-disclosure structure (lean `SKILL.md`
++ `references/`), a corrected installer, and per-model specs verified against
+`higgsfield:models_explore`. We also kept it **English-only**, dropping the original's
+incomplete multi-language translations. Credit to the original authors for the foundational
+prompt craft.
