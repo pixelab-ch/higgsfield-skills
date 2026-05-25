@@ -3,7 +3,7 @@
 **Project:** Rearchitect 15 static prompt-engineering documents into model-aware Claude Agent Skills with opt-in generation via Higgsfield MCP.
 **Granularity:** Standard
 **Total v1 requirements:** 31
-**Last updated:** 2026-05-24
+**Last updated:** 2026-05-25
 
 ---
 
@@ -44,7 +44,10 @@
   3. `skills/01-cinematic/fr/SKILL.md` exists with `name: higgsfield-cinematic-fr`, mirrors the EN structure, and references the same EN references/ files
   4. Claude can navigate the skill end-to-end: read SKILL.md → load references/model-specs.md → build a prompt → present confirmation panel (model, params, credit cost) → call `higgsfield:generate_video` only after explicit user YES → report job_id via `higgsfield:job_display`
   5. `allowed-tools` frontmatter in SKILL.md pre-approves the exact set of `mcp__higgsfield__*` tools the skill needs; no tool is invoked that is not listed in allowed-tools
-**Plans**: TBD
+**Plans**: 3 plans
+- [ ] 02-01-PLAN.md — Build references/ (model-specs, camera, hooks, examples) from verified specs + monolith content (STRUCT-02, MODEL-01–06, SPEC-01) [wave 1]
+- [ ] 02-02-PLAN.md — Rebuild lean EN SKILL.md: frontmatter, routing table, generation pointer, references links (STRUCT-01/02, MODEL-01–06, GEN-01/02/03/05, SPEC-01) [wave 2]
+- [ ] 02-03-PLAN.md — FR fr/SKILL.md variant + end-to-end navigation checkpoint + replicable-pattern SUMMARY (STRUCT-03, MODEL-01/05, GEN-01/05) [wave 3]
 
 ### Phase 3: Bulk Refactor — Remaining 14 Skills
 **Goal**: All 14 remaining skills (02–15) are refactored to the validated pilot template — lean SKILL.md, references/, fr/SKILL.md, correct model routing, valid parameters, and the opt-in generation loop; the 4 I2V skills additionally implement the media_upload → media_confirm branch
@@ -87,7 +90,7 @@
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Shared Infrastructure + Repo Hygiene | 0/3 | Not started | - |
-| 2. Pilot Skill (01-cinematic) End-to-End | 0/? | Not started | - |
+| 2. Pilot Skill (01-cinematic) End-to-End | 0/3 | Planned | - |
 | 3. Bulk Refactor — Remaining 14 Skills | 0/? | Not started | - |
 | 4. Install Script + FR i18n Polish | 0/? | Not started | - |
 | 5. Spec Accuracy Pass + Documentation | 0/? | Not started | - |
