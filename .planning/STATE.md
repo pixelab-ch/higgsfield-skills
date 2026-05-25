@@ -1,6 +1,6 @@
 # Project State — Higgsfield Skills Multi-Model Toolkit
 
-_Last updated: 2026-05-25T00:00:00Z (plan 02-01 complete)_
+_Last updated: 2026-05-25T00:00:00Z (plan 02-03 complete — Phase 2 COMPLETE)_
 
 ---
 
@@ -17,13 +17,13 @@ _Last updated: 2026-05-25T00:00:00Z (plan 02-01 complete)_
 ## Current Position
 
 **Phase**: 2 of 5
-**Plan**: 02-01 complete (02-02 and 02-03 pending)
-**Status**: In progress
-**Progress**: Phase 1 complete; Phase 2 plan 1/3 done; 1/5 phases complete
+**Plan**: 02-03 complete — all Phase 2 plans done
+**Status**: Phase 2 complete; Phase 3 ready to start
+**Progress**: Phase 1 complete; Phase 2 complete (all 3 plans done); 2/5 phases complete
 
 ```
-[=>        ] ~20%
-Phase 1 ████░░░░░░ Phase 5
+[==>       ] ~40%
+Phase 1 ████████░░ Phase 5
 ```
 
 ---
@@ -33,7 +33,7 @@ Phase 1 ████░░░░░░ Phase 5
 | Phase | Name | Status |
 |-------|------|--------|
 | 1 | Shared Infrastructure + Repo Hygiene | Complete |
-| 2 | Pilot Skill (01-cinematic) End-to-End | In progress (02-01 done) |
+| 2 | Pilot Skill (01-cinematic) End-to-End | Complete (02-01, 02-02, 02-03 done) |
 | 3 | Bulk Refactor — Remaining 14 Skills | Not started |
 | 4 | Install Script + FR i18n Polish | Not started |
 | 5 | Spec Accuracy Pass + Documentation | Not started |
@@ -44,7 +44,7 @@ Phase 1 ████░░░░░░ Phase 5
 
 **Requirements mapped**: 27/27 (100%)
 **Phases complete**: 1/5
-**Plans complete**: 4/? (01-01, 01-02, 01-03 done; 02-01 done — STRUCT-02, MODEL-01..06, SPEC-01)
+**Plans complete**: 7/? (01-01, 01-02, 01-03 done; 02-01, 02-02, 02-03 done — STRUCT-01..04, MODEL-01..06, GEN-01/05, SPEC-01, I18N pilot)
 
 ---
 
@@ -118,10 +118,10 @@ None.
 
 ## Session Continuity
 
-**Last session**: 2026-05-25T00:00:00Z — completed plan 02-01 (references/model-specs.md, camera.md, hooks.md, examples.md for 01-cinematic)
+**Last session**: 2026-05-25T00:00:00Z — completed plan 02-03 (skills/01-cinematic/fr/SKILL.md created; STRUCT-03 replicable pattern documented in SUMMARY)
 
-**Stopped at**: Phase 2, Plan 02-02 (next to execute — rebuild lean SKILL.md for 01-cinematic)
+**Stopped at**: Phase 2 COMPLETE — all three plans done (02-01, 02-02, 02-03)
 
-**Next action**: Execute plan 02-02
+**Next action**: Execute Phase 3 — Bulk Refactor of remaining 14 skills using STRUCT-03 pattern
 
-**Context for next session**: references/ files are now complete. Plan 02-02 builds the lean SKILL.md for 01-cinematic (target ≤300 lines) using the model-specs, camera, hooks, and examples files as progressive-disclosure targets. The rebuilt SKILL.md links to ../../shared/generation-flow.md and ../../shared/mcp-tools.md. Name must be `higgsfield-cinematic`. After 02-02 is complete, plan 02-03 authors fr/SKILL.md (`higgsfield-cinematic-fr`).
+**Context for next session**: Phase 2 is fully complete. The replicable pattern is documented in `.planning/phases/02-pilot-skill-01-cinematic-end-to-end/02-03-SUMMARY.md` (STRUCT-03 section). Phase 3 copies the exact decomposition: `SKILL.md` + `references/{model-specs,camera,hooks,examples}.md` + `fr/SKILL.md` for each of skills 02–15. The routing table in STATE.md (Style → Model Routing Reference) is the Phase 3 input. Use the verified ground-truth model specs from 02-CONTEXT.md as the baseline; run live `models_explore` for models not yet verified (wan2_6, wan2_7, seedance_2_0, kling3_0, marketing_studio_video, etc.).

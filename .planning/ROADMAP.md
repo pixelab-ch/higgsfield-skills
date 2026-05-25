@@ -9,8 +9,8 @@
 
 ## Phases
 
-- [ ] **Phase 1: Shared Infrastructure + Repo Hygiene** — Build the load-bearing foundation every skill depends on: shared/model-catalog.md, shared/generation-flow.md, shared/mcp-tools.md, LICENSE, and clean repo state (remove zh-CN, audit frontmatter)
-- [ ] **Phase 2: Pilot Skill (01-cinematic) End-to-End** — Validate the lean SKILL.md template, progressive disclosure structure, FR variant pattern, and the full opt-in generation loop on one skill before multiplying it across 14 more
+- [x] **Phase 1: Shared Infrastructure + Repo Hygiene** — Build the load-bearing foundation every skill depends on: shared/model-catalog.md, shared/generation-flow.md, shared/mcp-tools.md, LICENSE, and clean repo state (remove zh-CN, audit frontmatter)
+- [x] **Phase 2: Pilot Skill (01-cinematic) End-to-End** — Validate the lean SKILL.md template, progressive disclosure structure, FR variant pattern, and the full opt-in generation loop on one skill before multiplying it across 14 more
 - [ ] **Phase 3: Bulk Refactor — Remaining 14 Skills** — Apply the validated pilot template to all remaining skills in dependency-aware order, adding the media_upload branch for the 4 I2V skills (04, 08, 09, 10)
 - [ ] **Phase 4: Install Script + FR i18n Polish** — Revise install.sh to target the correct shared Claude Code + Desktop path, handle shared/ directory, add --fr/--all/--list/--target flags, idempotency; verify all 15 FR SKILL.md files
 - [ ] **Phase 5: Spec Accuracy Pass + Documentation** — Re-verify every model-specs.md against live models_explore, update verification dates, and rewrite README.md + README.fr.md to reflect the real structure
@@ -30,9 +30,9 @@
   4. A real `LICENSE` file exists at repo root; README.md contains no references to `LICENSE` or `logs.md` that do not correspond to real files
   5. All zh-CN translation directories are deleted; the STRUCT-04 frontmatter standard (name ≤64 chars lowercase-hyphens unique across EN+FR, description ≤1024 chars third-person with "Use when…" triggers) is documented in shared/skill-template.md (per-skill frontmatter rewriting to this standard happens in Phases 2-3)
 **Plans**: 3 plans
-- [ ] 01-01-PLAN.md — Create shared/ + model-catalog.md + skill-template.md (INFRA-01, INFRA-02, STRUCT-04) [wave 1]
-- [ ] 01-02-PLAN.md — Write shared/mcp-tools.md + generation-flow.md (INFRA-04, INFRA-03) [wave 2]
-- [ ] 01-03-PLAN.md — LICENSE + README/CONTRIBUTING cleanup + zh-CN removal (INFRA-05, I18N-01) [wave 1]
+- [x] 01-01-PLAN.md — Create shared/ + model-catalog.md + skill-template.md (INFRA-01, INFRA-02, STRUCT-04) [wave 1]
+- [x] 01-02-PLAN.md — Write shared/mcp-tools.md + generation-flow.md (INFRA-04, INFRA-03) [wave 2]
+- [x] 01-03-PLAN.md — LICENSE + README/CONTRIBUTING cleanup + zh-CN removal (INFRA-05, I18N-01) [wave 1]
 
 ### Phase 2: Pilot Skill (01-cinematic) End-to-End
 **Goal**: One skill — 01-cinematic — is fully rearchitected as the reference implementation that proves the SKILL.md template, progressive disclosure, FR variant, and generation loop before they replicate across 14 more skills
@@ -45,9 +45,9 @@
   4. Claude can navigate the skill end-to-end: read SKILL.md → load references/model-specs.md → build a prompt → present confirmation panel (model, params, credit cost) → call `higgsfield:generate_video` only after explicit user YES → report job_id via `higgsfield:job_display`
   5. `allowed-tools` frontmatter in SKILL.md pre-approves the exact set of `mcp__higgsfield__*` tools the skill needs; no tool is invoked that is not listed in allowed-tools
 **Plans**: 3 plans
-- [ ] 02-01-PLAN.md — Build references/ (model-specs, camera, hooks, examples) from verified specs + monolith content (STRUCT-02, MODEL-01–06, SPEC-01) [wave 1]
-- [ ] 02-02-PLAN.md — Rebuild lean EN SKILL.md: frontmatter, routing table, generation pointer, references links (STRUCT-01/02, MODEL-01–06, GEN-01/02/03/05, SPEC-01) [wave 2]
-- [ ] 02-03-PLAN.md — FR fr/SKILL.md variant + end-to-end navigation checkpoint + replicable-pattern SUMMARY (STRUCT-03, MODEL-01/05, GEN-01/05) [wave 3]
+- [x] 02-01-PLAN.md — Build references/ (model-specs, camera, hooks, examples) from verified specs + monolith content (STRUCT-02, MODEL-01–06, SPEC-01) [wave 1]
+- [x] 02-02-PLAN.md — Rebuild lean EN SKILL.md: frontmatter, routing table, generation pointer, references links (STRUCT-01/02, MODEL-01–06, GEN-01/02/03/05, SPEC-01) [wave 2]
+- [x] 02-03-PLAN.md — FR fr/SKILL.md variant + end-to-end navigation checkpoint + replicable-pattern SUMMARY (STRUCT-03, MODEL-01/05, GEN-01/05) [wave 3]
 
 ### Phase 3: Bulk Refactor — Remaining 14 Skills
 **Goal**: All 14 remaining skills (02–15) are refactored to the validated pilot template — lean SKILL.md, references/, fr/SKILL.md, correct model routing, valid parameters, and the opt-in generation loop; the 4 I2V skills additionally implement the media_upload → media_confirm branch
