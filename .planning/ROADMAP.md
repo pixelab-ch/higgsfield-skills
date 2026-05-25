@@ -59,7 +59,13 @@
   2. The 4 I2V skills (04-comic-to-video, 08-anime-action, 09-product-360, 10-music-video) each document and trigger the `higgsfield:media_upload` → `higgsfield:media_confirm` → attach-reference flow before the generate call; `mcp__higgsfield__media_upload` and `mcp__higgsfield__media_confirm` are listed in their `allowed-tools` frontmatter
   3. All 14 skills have fully populated `references/model-specs.md` files sourced from `models_explore` data (no fabricated resolution, format, or fps claims), annotated with verification date
   4. Running any of the 14 skills delivers the same confirmation-gated generation loop as the pilot: prompt → confirm panel → explicit YES → generate → job report
-**Plans**: TBD
+**Plans**: 6 plans (all wave 1 — disjoint skill directories run in parallel)
+- [ ] 03-01-PLAN.md — Refactor 02-3d-cgi, 03-cartoon, 05-fight-scenes (stylized/animation, T2V) [wave 1]
+- [ ] 03-02-PLAN.md — Refactor 06-motion-design-ad, 07-ecommerce-ad (+ms_image still), 14-food-beverage (marketing, T2V) [wave 1]
+- [ ] 03-03-PLAN.md — Refactor 11-social-hook, 12-brand-story (+soul_location still) (social/brand, T2V) [wave 1]
+- [ ] 03-04-PLAN.md — Refactor 13-fashion-lookbook (+soul_cinematic still), 15-real-estate (lifestyle/property, T2V) [wave 1]
+- [ ] 03-05-PLAN.md — Refactor 04-comic-to-video, 08-anime-action (GEN-04 mandatory image media branch) [wave 1]
+- [ ] 03-06-PLAN.md — Refactor 09-product-360 (+still), 10-music-video (GEN-04 mandatory media branch: image / audio) [wave 1]
 
 ### Phase 4: Install Script
 **Goal**: The install script works correctly for both Claude Code and Claude Desktop, installs the shared/ directory so relative references resolve, and is idempotent
@@ -90,6 +96,6 @@
 |-------|----------------|--------|-----------|
 | 1. Shared Infrastructure + Repo Hygiene | 3/3 | ✅ Complete (verified 5/5) | 2026-05-24 |
 | 2. Pilot Skill (01-cinematic) End-to-End | 3/3 | ✅ Complete (verified 5/5) + refined post-review | 2026-05-25 |
-| 3. Bulk Refactor — Remaining 14 Skills | 0/? | Not started | - |
+| 3. Bulk Refactor — Remaining 14 Skills | 0/6 | Planned | - |
 | 4. Install Script | 0/? | Not started | - |
 | 5. Spec Accuracy Pass + Documentation | 0/? | Not started | - |
