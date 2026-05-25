@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://higgsfield.ai">
-    <img src="./assets/banner.svg" alt="Higgsfield Skills — Multi-Model Prompt & Generation Toolkit">
+  <a href="https://pixelab.ch">
+    <img src="./assets/banner.png" alt="Higgsfield Skills — Multi-Model Prompt & Generation Toolkit, built by Pixelab">
   </a>
 </p>
 
@@ -165,7 +165,8 @@ higgsfield-skills/
 ├── LICENSE
 ├── install.sh                         # Installer (macOS / Linux)
 ├── assets/
-│   └── banner.svg
+│   ├── banner.png                     # README banner (Pixelab-branded)
+│   └── social-preview.png             # GitHub social card (1280×640)
 ├── shared/                            # Cross-skill references (installed to ~/.claude/shared/)
 │   ├── model-catalog.md               # All ~38 Higgsfield models, verified 2026-05-24
 │   ├── generation-flow.md             # Canonical opt-in generation workflow
