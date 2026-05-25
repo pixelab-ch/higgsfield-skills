@@ -53,26 +53,26 @@ also handles mood-board stills via the `cinematic_studio_2_5` image path.
 | **Media roles** | `image`, `start_image`, `end_image` (optional) | `start_image` only (max 1) |
 | **Native audio** | No | Yes |
 
-**Routing rule:** Use `cinematic_studio_3_0` by default. Fall back to `veo3_1`
-only when: (1) the primary model is unavailable, (2) the user wants native
-audio generation, (3) the user explicitly requests photorealistic output and
-accepts the discrete duration constraint.
+**Routing rule:** Use `cinematic_studio_3_0` by default. Only fall back to
+`veo3_1` when (1) the primary model is unavailable, or (2) the user wants
+native audio or explicitly photorealistic output **and**, after being told
+what they give up, accepts veo3_1's constraints: no `1:1` aspect ratio,
+discrete durations only (`4`/`6`/`8` s instead of the continuous 4–15 s
+range), and `start_image` only (no `end_image`). If the user has not been
+informed of these trade-offs, stay on `cinematic_studio_3_0` and let them
+decide — never switch silently.
 
 **MODEL-06 directive:** If a parameter is rejected at generation time, call
 `higgsfield:models_explore` with the target model name to re-verify the live
 schema. The live catalog is the authoritative source — never guess parameter
 values. Full parameter tables: [references/model-specs.md](references/model-specs.md).
 
-### Per-platform aspect ratio and duration recommendations
+### Per-platform aspect ratio and duration
 
-| Platform | Aspect ratio | Duration | Notes |
-|---|---|---|---|
-| TikTok | `9:16` | 6–10 s | Vertical full-screen; hook must land within first 2 s |
-| Instagram Reels | `9:16` | 8–12 s | Vertical; high visual polish expected |
-| YouTube Shorts | `9:16` or `16:9` | 10–15 s | 15 s max suits full-arc storytelling |
-| YouTube (standard) | `16:9` | 10–15 s | Widescreen; contemplative pacing works well |
-| LinkedIn | `16:9` | 8–12 s | Professional format; deliberate pacing |
-| Instagram feed / Square | `1:1` | 4–8 s | `cinematic_studio_3_0` only — veo3_1 has no `1:1` |
+Quick rule: vertical `9:16` for TikTok / Reels / Shorts, `16:9` for standard
+YouTube and LinkedIn, `1:1` only on `cinematic_studio_3_0` (veo3_1 has none).
+Full per-platform recommendation table:
+[references/model-specs.md](references/model-specs.md).
 
 ---
 

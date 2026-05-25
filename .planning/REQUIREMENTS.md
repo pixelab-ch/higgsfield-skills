@@ -50,13 +50,13 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 
 ### Internationalization (I18N)
 
-- [ ] **I18N-01**: All zh-CN translation files are removed
-- [ ] **I18N-02**: Each skill provides a French variant as a separate `fr/SKILL.md` with a distinct `name`; reference files stay English-only to limit maintenance
-- [ ] **I18N-03**: FR variants are authored only after the EN skill is finalized (avoid translating half-finished content)
+- [x] **I18N-01**: All zh-CN translation files are removed ✓ (Phase 1)
+
+> **I18N-02 / I18N-03 (French variants) — moved to Out of Scope on 2026-05-25.** After the pilot, the project narrowed to English only: a French variant across 15 skills isn't worth the maintenance for a Claude/developer audience. The pilot FR variant was removed.
 
 ### Documentation (DOC)
 
-- [ ] **DOC-01**: README (EN + FR) accurately describes the real repo structure — no phantom files, correct stats, correct install instructions
+- [ ] **DOC-01**: README (English) accurately describes the real repo structure — no phantom files, correct stats, correct install instructions
 - [ ] **DOC-02**: README documents the model routing table, the opt-in generation flow, and the supported model ecosystem
 
 ## v2 / Deferred
@@ -69,41 +69,42 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 
 - Cross-provider abstraction (direct Runway/Sora/Midjourney/native Kling APIs) — Higgsfield MCP already aggregates these providers
 - Automatic generation without confirmation — generation must always be opt-in (credit cost)
-- Retaining zh-CN — replaced by EN + FR
+- Retaining zh-CN — removed (English only)
+- Translated skill variants, incl. French (I18N-02/I18N-03) — English only; not worth N×15 maintenance for a Claude/developer audience (decided 2026-05-25 after pilot)
 - A hosted web UI or service — these are skills run inside Claude Code / Desktop
 
 ## Traceability
 
 | REQ-ID | Phase | Status |
 |--------|-------|--------|
-| INFRA-01 | Phase 1 | Pending |
-| INFRA-02 | Phase 1 | Pending |
-| INFRA-03 | Phase 1 | Pending |
-| INFRA-04 | Phase 1 | Pending |
-| INFRA-05 | Phase 1 | Pending |
-| STRUCT-04 | Phase 1 | Pending |
-| I18N-01 | Phase 1 | Pending |
-| STRUCT-01 | Phase 2 | Pending |
-| STRUCT-02 | Phase 2 | Pending |
-| STRUCT-03 | Phase 2 | Pending |
-| MODEL-01 | Phase 2 | Pending |
-| MODEL-02 | Phase 2 | Pending |
-| MODEL-03 | Phase 2 | Pending |
-| MODEL-04 | Phase 2 | Pending |
-| MODEL-05 | Phase 2 | Pending |
-| MODEL-06 | Phase 2 | Pending |
-| GEN-01 | Phase 2 | Pending |
-| GEN-02 | Phase 2 | Pending |
-| GEN-03 | Phase 2 | Pending |
-| GEN-05 | Phase 2 | Pending |
-| SPEC-01 | Phase 2 | Pending |
+| INFRA-01 | Phase 1 | Complete ✓ |
+| INFRA-02 | Phase 1 | Complete ✓ |
+| INFRA-03 | Phase 1 | Complete ✓ |
+| INFRA-04 | Phase 1 | Complete ✓ |
+| INFRA-05 | Phase 1 | Complete ✓ |
+| STRUCT-04 | Phase 1 | Complete ✓ |
+| I18N-01 | Phase 1 | Complete ✓ |
+| STRUCT-01 | Phase 2 | Complete ✓ |
+| STRUCT-02 | Phase 2 | Complete ✓ |
+| STRUCT-03 | Phase 2 | Complete ✓ |
+| MODEL-01 | Phase 2 | Complete ✓ |
+| MODEL-02 | Phase 2 | Complete ✓ |
+| MODEL-03 | Phase 2 | Complete ✓ |
+| MODEL-04 | Phase 2 | Complete ✓ |
+| MODEL-05 | Phase 2 | Complete ✓ |
+| MODEL-06 | Phase 2 | Complete ✓ |
+| GEN-01 | Phase 2 | Complete ✓ |
+| GEN-02 | Phase 2 | Complete ✓ |
+| GEN-03 | Phase 2 | Complete ✓ |
+| GEN-05 | Phase 2 | Complete ✓ |
+| SPEC-01 | Phase 2 | Complete ✓ |
 | GEN-04 | Phase 3 | Pending |
 | PKG-01 | Phase 4 | Pending |
 | PKG-02 | Phase 4 | Pending |
 | PKG-03 | Phase 4 | Pending |
 | PKG-04 | Phase 4 | Pending |
-| I18N-02 | Phase 4 | Pending |
-| I18N-03 | Phase 4 | Pending |
+| I18N-02 | — | Out of Scope (English only) |
+| I18N-03 | — | Out of Scope (English only) |
 | SPEC-02 | Phase 5 | Pending |
 | DOC-01 | Phase 5 | Pending |
 | DOC-02 | Phase 5 | Pending |

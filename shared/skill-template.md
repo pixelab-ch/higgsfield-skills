@@ -19,7 +19,7 @@ Every `SKILL.md` file must open with a YAML frontmatter block containing at mini
 | Forbidden characters | Spaces, underscores, uppercase letters, XML tags |
 | Reserved words | `anthropic` and `claude` are forbidden (anywhere in the name) |
 | Must match directory | The value must match the skill's directory name exactly |
-| Uniqueness | Must be unique across **all EN and FR variants** — French skills suffix `-fr` (e.g. `higgsfield-cinematic` / `higgsfield-cinematic-fr`) |
+| Uniqueness | Must be unique across all skills (one name per skill). This project ships **English only** — no translated skill variants. |
 
 **Naming guidance (this project):** New skill names should use the `higgsfield-<style>`
 pattern instead of the legacy `seedance-*` prefix. The `seedance-*` names are valid format
@@ -75,29 +75,6 @@ Key properties of this example:
 - Explicit "Use when..." clause in `description`; more triggers in `when_to_use`
 - Third person throughout
 - No XML tags; no "anthropic" or "claude"
-
-### Example B — French variant (compliant)
-
-```yaml
----
-name: higgsfield-cinematic-fr
-description: >-
-  Crée des prompts vidéo cinématographiques pour Higgsfield et sélectionne le
-  meilleur modèle (seedance_2_0, cinematic_studio_3_0 ou veo3_1). À utiliser
-  quand l'utilisateur souhaite un clip vidéo de qualité cinéma avec des
-  mouvements de caméra, une faible profondeur de champ ou un éclairage
-  dramatique.
-when_to_use: >-
-  Utiliser pour look film, cinématographie heure dorée, plans dolly,
-  style objectif anamorphique, ou toute demande mentionnant "cinématique",
-  "look film" ou "scène de film".
----
-```
-
-Key properties of this example:
-- `name` is `higgsfield-cinematic-fr` — the `-fr` suffix makes it unique from the EN variant
-- The directory is named `higgsfield-cinematic-fr/` to match
-- Same structural rules as EN: third person, "Use when" clause, ≤1024 chars, ≤64 name
 
 ---
 
@@ -207,7 +184,9 @@ Call `higgsfield:job_display` with the `job_id`. If the job is pending, use
 |---------|-----------------|
 | `name: Higgsfield Cinematic` (uppercase/spaces) | `name: higgsfield-cinematic` |
 | `name: seedance-cinematic` on a new multi-model skill | `name: higgsfield-cinematic` (drop `seedance-` prefix for new skills) |
-| Duplicate `name` across EN + FR (both use `higgsfield-cinematic`) | EN: `higgsfield-cinematic`; FR: `higgsfield-cinematic-fr` |
+| Duplicate `name` across two skills | Each skill has a unique `higgsfield-<style>` name |
+| Per-platform reco table duplicated in both `SKILL.md` and `references/model-specs.md` | Keep the full table in `references/model-specs.md`; `SKILL.md` carries a one-line quick rule + pointer |
+| Auto-switching to a fallback model without informing the user of its trade-offs | State the fallback's lost capabilities; switch only on explicit informed consent |
 | First-person description: "I craft prompts..." | Third person: "Crafts prompts..." |
 | Missing "Use when..." clause | Always include an explicit trigger clause in `description` or `when_to_use` |
 | Hardcoded model specs in SKILL.md body | Use routing rationale only; call `higgsfield:models_explore` at generation time |

@@ -31,7 +31,7 @@ The existing repo provides a starting point (not yet validated against the new g
 - [ ] **Progressive disclosure**: lean `SKILL.md` (overview + workflow + model routing) that references `references/*.md` for the heavy encyclopedic content, instead of 700–2300-line monoliths
 - [ ] **Proper LICENSE** file present and referenced correctly
 - [ ] **Install script** works for both Claude Code (`~/.claude/skills`) and Claude Desktop, on macOS/Linux (and ideally Windows)
-- [ ] **Languages = EN + FR**: drop the half-translated zh-CN, provide clean English + French
+- [ ] **English only**: drop the half-translated zh-CN; ship no translated skill variants (revised after the pilot — FR maintenance across 15 skills isn't justified for a Claude/developer audience)
 - [ ] README and docs accurately describe the real structure (no phantom `LICENSE`/`logs.md` references, correct stats)
 
 ### Out of Scope
@@ -40,7 +40,7 @@ The existing repo provides a starting point (not yet validated against the new g
 
 - Cross-provider abstraction (direct Runway / Sora / Midjourney / native Kling APIs) — decided: stay within the Higgsfield ecosystem, which already aggregates Bytedance, Google, Kling, xAI, Black Forest Labs, etc. behind one MCP
 - Automatic/unattended generation that spends credits without confirmation — decided: generation is opt-in only
-- Keeping zh-CN translations — decided: dropped in favour of EN + FR
+- Translated skill variants (FR or any other language) — decided: English only. Claude and the developer audience read English; N×15 translation maintenance isn't justified. zh-CN removed, no FR added.
 - Building a separate web UI or hosted service — these are skills, the runtime is Claude Code / Desktop
 
 ## Context
@@ -64,7 +64,7 @@ The existing repo provides a starting point (not yet validated against the new g
 - **Compatibility**: Must follow the Claude Agent Skills format (YAML frontmatter `name` + `description`; `SKILL.md` + optional `references/`) so skills load in both Claude Code and Desktop
 - **Cost**: Generation consumes Higgsfield credits → never generate without explicit user confirmation
 - **Accuracy**: Per-model specs must match what `models_explore` reports, not invented numbers
-- **Languages**: English + French only
+- **Languages**: English only (no translated skill variants)
 - **Source of truth for model constraints**: the live `models_explore` catalogue, not hardcoded assumptions that can drift
 
 ## Key Decisions
@@ -76,9 +76,9 @@ The existing repo provides a starting point (not yet validated against the new g
 | Stay within Higgsfield ecosystem (no cross-provider) | Higgsfield already aggregates Bytedance/Google/Kling/xAI/BFL behind one MCP; avoids N API integrations | — Pending |
 | Generation is opt-in, not automatic | Generation spends credits; user must confirm | — Pending |
 | Target Claude Code + Desktop | Where the user runs skills; current install script is broken for Code | — Pending |
-| Languages EN + FR, drop zh-CN | Existing Chinese was largely untranslated; user is French | — Pending |
+| English only (drop zh-CN, no FR) | Chinese was largely untranslated; FR variant maintenance across 15 skills not justified for a Claude/developer audience (revised after pilot review) | ✓ Good |
 | Progressive disclosure (lean SKILL.md + references/) | Monolithic 700–2300-line skills waste context on load | — Pending |
 | Model routing per skill | Users shouldn't need to know which of ~38 models fits their style | — Pending |
 
 ---
-*Last updated: 2026-05-24 after initialization*
+*Last updated: 2026-05-25 after pilot review — language scope narrowed to English only*
