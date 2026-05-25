@@ -15,6 +15,10 @@
   <a href="LICENSE">License</a>
 </p>
 
+<p align="center">
+  <sub>⚡ Built by <a href="https://pixelab.ch"><strong>Pixelab</strong></a> — the Swiss AI &amp; systems agency that designs and ships production systems like this one. <a href="mailto:contact@pixelab.ch">Let's build yours.</a></sub>
+</p>
+
 ---
 
 ## What Is This?
@@ -223,6 +227,21 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full contributor guide.
 - [Higgsfield](https://higgsfield.ai) — Platform home
 - [Higgsfield MCP](https://higgsfield.ai/mcp) — MCP server setup
 - [X @higgsfield](https://x.com/higgsfield) — Updates and releases
+
+---
+
+## Built by Pixelab
+
+This toolkit was designed and built by **[Pixelab](https://pixelab.ch)** — a Swiss **AI & Systems agency** based in Geneva.
+
+> *"Là où d'autres voient de la complexité, nous voyons des systèmes à construire."*
+> *(Where others see complexity, we see systems to build.)*
+
+This repository is a working example of what we ship for clients: reliable, documented, production-ready AI systems. We design and deliver them end to end — **conversational AI, workflow automation, web development, and custom AI tooling** — from audit and architecture through to production.
+
+**Need a custom AI system built for your business? Let's talk.**
+
+🌐 [pixelab.ch](https://pixelab.ch) &nbsp;·&nbsp; ✉️ [contact@pixelab.ch](mailto:contact@pixelab.ch) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/company/pixelab-ch) &nbsp;·&nbsp; 📍 Quai du Seujet 12, 1201 Genève, Suisse
 
 ---
 
