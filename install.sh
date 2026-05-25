@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ################################################################################
-# install.sh — Install Higgsfield Seedance 2.0 Skills into Claude
+# install.sh — Install Higgsfield Skills into Claude
 #
 # Installs the 15 Higgsfield prompt-engineering skills into the correct
 # Claude Agent Skills directory: ~/.claude/skills/ (used by both Claude Code
@@ -212,7 +212,7 @@ get_frontmatter_field() {
 # List all available skills
 # ---------------------------------------------------------------------------
 list_skills() {
-    print_header "Higgsfield Seedance 2.0 — Available Skills"
+    print_header "Higgsfield Skills — Available Skills"
     local count=0
     while IFS= read -r -d '' dir; do
         count=$((count + 1))
@@ -310,7 +310,7 @@ install_all() {
 # Interactive skill selection
 # ---------------------------------------------------------------------------
 interactive_install() {
-    print_header "Higgsfield Seedance 2.0 — Skill Installer"
+    print_header "Higgsfield Skills — Skill Installer"
     print_note "Target: ${TARGET_LABEL}"
     echo ""
 
