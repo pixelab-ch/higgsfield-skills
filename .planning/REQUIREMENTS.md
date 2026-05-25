@@ -39,7 +39,7 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 ### Factual Accuracy (SPEC)
 
 - [ ] **SPEC-01**: All invented/contradictory specs are removed (no "4K 3840×2160", no ".webm output", no fabricated fps) across all skills
-- [ ] **SPEC-02**: Every per-model spec stated in a skill matches the live `models_explore` output, verified in a final accuracy pass
+- [x] **SPEC-02**: Every per-model spec stated in a skill matches the live `models_explore` output, verified in a final accuracy pass
 
 ### Packaging / Install (PKG)
 
@@ -56,8 +56,8 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 
 ### Documentation (DOC)
 
-- [ ] **DOC-01**: README (English) accurately describes the real repo structure — no phantom files, correct stats, correct install instructions
-- [ ] **DOC-02**: README documents the model routing table, the opt-in generation flow, and the supported model ecosystem
+- [x] **DOC-01**: README (English) accurately describes the real repo structure — no phantom files, correct stats, correct install instructions
+- [x] **DOC-02**: README documents the model routing table, the opt-in generation flow, and the supported model ecosystem
 
 ## v2 / Deferred
 
@@ -105,6 +105,6 @@ Derived from PROJECT.md and `.planning/research/SUMMARY.md`. REQ-IDs map to road
 | PKG-04 | Phase 4 | Pending |
 | I18N-02 | — | Out of Scope (English only) |
 | I18N-03 | — | Out of Scope (English only) |
-| SPEC-02 | Phase 5 | Pending |
-| DOC-01 | Phase 5 | Pending |
-| DOC-02 | Phase 5 | Pending |
+| SPEC-02 | Phase 5 | Complete ✓ |
+| DOC-01 | Phase 5 | Complete ✓ |
+| DOC-02 | Phase 5 | Complete ✓ |

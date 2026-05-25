@@ -1,134 +1,180 @@
-🌐 **English** | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md) | [Deutsch](README.de.md) | [Français](README.fr.md) | [Português](README.pt.md) | [Türkçe](README.tr.md)
-
----
-
 <p align="center">
-  <a href="https://higgsfield.ai/create/video?model=seedance_2_0">
-    <img src="./assets/banner.svg" alt="Seedance 2.0 × Higgsfield 技能集">
+  <a href="https://higgsfield.ai">
+    <img src="./assets/banner.svg" alt="Higgsfield Skills — Multi-Model Prompt & Generation Toolkit">
   </a>
 </p>
 
 <p align="center">
-  <strong>🎬 higgsfield-seedance2-jineng</strong><br>
-  <em>Seedance 2.0 × Higgsfield 技能集 | Prompt Engineering Skills Collection</em>
+  <strong>Higgsfield Skills — Multi-Model Prompt & Generation Toolkit</strong><br>
+  <em>15 Claude Agent Skills for AI image and video generation on the Higgsfield platform</em>
 </p>
 
 <p align="center">
   <a href="https://higgsfield.ai">Higgsfield</a> ·
-  <a href="https://higgsfield.ai/create/video?model=seedance_2_0">创建视频 Create Video</a> ·
-  <a href="https://x.com/higgsfield">𝕏 @higgsfield</a>
+  <a href="https://x.com/higgsfield">X @higgsfield</a> ·
+  <a href="LICENSE">License</a>
 </p>
 
 ---
 
-# 这是什么？ What Is This?
+## What Is This?
 
-15 个专业 Claude 技能，专为 Seedance 2.0（Higgsfield）打造。每个技能将 Claude 变成特定视频风格的提示词工程师——生成大型、详细、可直接使用的提示词，包含强力 **2 秒钩子**，让观众停止滑动。
+A collection of **15 Claude Agent Skills** that turn Claude into an expert prompt engineer for AI image and video generation on the [Higgsfield](https://higgsfield.ai) platform. Each skill covers a creative style or use case, produces a production-ready prompt, routes it to the most appropriate Higgsfield model, and — on explicit user confirmation — can submit the generation directly through the Higgsfield MCP server.
 
-15 specialized Claude skills built for Seedance 2.0 on Higgsfield. Each skill turns Claude into a prompt engineer for a specific video style — generating large, detailed, paste-ready prompts with powerful **2-second hooks** that stop the scroll.
-
-👉 **[立即在 Higgsfield 上创建视频 Start creating on Higgsfield](https://higgsfield.ai/create/video?model=seedance_2_0)**
+**You do not need to know which of the ~38 Higgsfield models to pick or what parameters each accepts.** The skills handle model routing, parameter validation, and the generation workflow for you.
 
 ---
 
-<p align="center">
-  <img src="./assets/skill-map.svg" alt="Skill Map 技能地图" width="800">
-</p>
+## The 15 Skills
 
-## 每个技能包含 What Each Skill Contains
-
-- **2 秒钩子框架 / 2-Second Hook Framework** — 10-12 种抓取注意力的开场模式 | 10-12 attention-grabbing opener patterns
-- **时间线分段 / Timeline Segmentation** — 逐拍分解，最长 15 秒 | Beat-by-beat breakdown up to 15s
-- **摄像机运动百科 / Camera Movement Encyclopedia** — 15-20+ 技术及精确提示词 | 15-20+ techniques with exact phrasing
-- **灯光与氛围 / Lighting & Atmosphere** — 传达情绪和品质的布光方案 | Setups that communicate mood and quality
-- **声音设计 / Sound Design** — 环境音、拟音、音乐、静默 | Ambient, foley, music, silence
-- **素材引用策略 / Material Reference Strategy** — `@image1` `@video1` `@audio1` 的最佳用法 | Best practices for references
-- **平台优化 / Platform Optimization** — 抖音、TikTok、Instagram、YouTube 等 | Cross-platform adjustments
-- **5+ 大型示例提示词 / 5+ Large Example Prompts** — 每个 15-25 行，制作级品质 | 15-25 lines each, production-quality
-
----
-
-## 🎯 15 个技能 The 15 Skills
-
-### 创意风格 Creative Styles
-
-| # | 技能 Skill | 用途 Use Case |
-|---|---|---|
-| 01 | [电影风格 Cinematic](skills/01-cinematic/SKILL.md) | 影视品质 — 戏剧性光影、镜头语言、景深、调色 | Film quality — dramatic lighting, camera language, depth of field |
-| 02 | [3D CGI](skills/02-3d-cgi/SKILL.md) | 3D 渲染 — Pixar、虚幻引擎、照片级、等距 | 3D rendered — Pixar, Unreal Engine, photorealistic, isometric |
-| 03 | [卡通动画 Cartoon](skills/03-cartoon/SKILL.md) | 2D 动画 — 赛璐璐、手绘、扁平矢量、水彩 | 2D animation — cel-shaded, hand-drawn, flat vector, watercolor |
-| 04 | [漫画转视频 Comic to Video](skills/04-comic-to-video/SKILL.md) | 动态漫画 — 漫画、条漫、分镜、连续画面 | Animate comics — manga, webtoons, storyboards |
-| 05 | [打斗场景 Fight Scenes](skills/05-fight-scenes/SKILL.md) | 动作 — 武术、剑战、追逐、超级英雄 | Action — martial arts, sword fights, chase, superhero |
-| 08 | [动漫 Anime](skills/08-anime-action/SKILL.md) | 日本动漫 — 少年、青年、机甲、日常、OP | Anime — shonen, seinen, mecha, slice-of-life, openings |
-
-### 商业营销 Commercial & Marketing
-
-| # | 技能 Skill | 用途 Use Case |
-|---|---|---|
-| 06 | [动态设计广告 Motion Design Ad](skills/06-motion-design-ad/SKILL.md) | 软件/SaaS — 产品发布、功能展示 | Software/SaaS — product launches, feature showcases |
-| 07 | [电商广告 E-Commerce Ad](skills/07-ecommerce-ad/SKILL.md) | 产品广告 — 时尚、美妆、电子、食品 | Product ads — fashion, beauty, electronics, food |
-| 09 | [产品 360° Product 360](skills/09-product-360/SKILL.md) | 转盘展示 — 多角度、主视觉、材质 | Turntable — multi-angle, hero shots, material showcase |
-| 11 | [社交钩子 Social Hook](skills/11-social-hook/SKILL.md) | 病毒内容 — 抖音/TikTok/Reels/Shorts | Viral content — scroll-stopping hooks |
-| 12 | [品牌故事 Brand Story](skills/12-brand-story/SKILL.md) | 品牌叙事 — 创业故事、使命、企业文化 | Brand narrative — origin stories, mission, culture |
-
-### 行业专项 Industry-Specific
-
-| # | 技能 Skill | 用途 Use Case |
-|---|---|---|
-| 10 | [音乐视频 Music Video](skills/10-music-video/SKILL.md) | 节拍同步 — 表演、叙事、可视化 | Beat-synced — performance, narrative, visualizers |
-| 13 | [时尚型录 Fashion Lookbook](skills/13-fashion-lookbook/SKILL.md) | 时尚 — 型录、走秀、穿搭、品牌活动 | Fashion — lookbooks, walks, outfits, campaigns |
-| 14 | [美食饮品 Food & Beverage](skills/14-food-beverage/SKILL.md) | 美食 — 餐厅、食谱、ASMR、食欲诱惑 | Food — restaurant, recipe, ASMR, appetite appeal |
-| 15 | [房地产 Real Estate](skills/15-real-estate/SKILL.md) | 房产 — 房屋参观、建筑、室内设计 | Property — tours, architecture, interior design |
-
+| # | Skill name | Use case |
+|---|-----------|---------|
+| 01 | `higgsfield-cinematic` | Film-quality video — dramatic lighting, camera language, depth of field, color grading |
+| 02 | `higgsfield-3d-cgi` | 3D rendered visuals — Pixar-style, Unreal Engine, photorealistic, isometric |
+| 03 | `higgsfield-cartoon` | 2D animation — cel-shaded, hand-drawn, flat vector, watercolor |
+| 04 | `higgsfield-comic-to-video` | Animate comics — manga panels, webtoons, storyboards to video |
+| 05 | `higgsfield-fight-scenes` | Action — martial arts, sword fights, chase sequences, superhero |
+| 06 | `higgsfield-motion-design-ad` | Software/SaaS ads — product launches, feature showcases, UI demos |
+| 07 | `higgsfield-ecommerce-ad` | Product ads — fashion, beauty, electronics, food with still + video |
+| 08 | `higgsfield-anime-action` | Japanese anime — shonen, seinen, mecha, slice-of-life, openings |
+| 09 | `higgsfield-product-360` | Turntable reveals — multi-angle, hero shots, material showcase |
+| 10 | `higgsfield-music-video` | Beat-synced visuals — performance, narrative, audio-driven generation |
+| 11 | `higgsfield-social-hook` | Viral short-form — scroll-stopping hooks for TikTok/Reels/Shorts |
+| 12 | `higgsfield-brand-story` | Brand narrative — origin stories, mission films, company culture |
+| 13 | `higgsfield-fashion-lookbook` | Fashion — lookbooks, runway walks, outfit campaigns |
+| 14 | `higgsfield-food-beverage` | Food — restaurant, recipe, ASMR, appetite-appeal videos |
+| 15 | `higgsfield-real-estate` | Property — house tours, architecture walkthroughs, interior design |
 
 ---
 
-## 🚀 快速开始 Quick Start
+## Model Routing Table
 
-### 安装技能 Install a Skill
+Each skill routes to a primary model and falls back to a second model when the primary is unavailable or unsuitable.
 
-1. 将 `SKILL.md` 复制到 Claude 技能目录 | Copy `SKILL.md` to your Claude skills directory
-2. 描述你想创建的视频 | Describe the video you want to create
-3. Claude 生成制作级提示词 | Claude generates a production-ready prompt
-4. 粘贴到 [Seedance 2.0（Higgsfield）](https://higgsfield.ai/create/video?model=seedance_2_0) | Paste into Seedance 2.0 on Higgsfield with your materials
+| Skill | Primary model | Fallback model |
+|-------|--------------|----------------|
+| 01-cinematic | `cinematic_studio_3_0` | `veo3_1` |
+| 02-3d-cgi | `seedance_2_0` | `wan2_7` |
+| 03-cartoon | `wan2_7` | `seedance_2_0` |
+| 04-comic-to-video | `wan2_6` | `seedance_2_0` (I2V) |
+| 05-fight-scenes | `cinematic_studio_3_0` | `kling3_0` |
+| 06-motion-design-ad | `marketing_studio_video` | `seedance_2_0` |
+| 07-ecommerce-ad | `marketing_studio_video` | `seedance_2_0` (+ `ms_image` for stills) |
+| 08-anime-action | `wan2_7` | `wan2_6` (I2V) |
+| 09-product-360 | `seedance_2_0` | `cinematic_studio_3_0` (I2V) |
+| 10-music-video | `veo3_1` | `veo3_1_lite` (audio) |
+| 11-social-hook | `kling3_0` | `grok_video` |
+| 12-brand-story | `cinematic_studio_3_0` | `veo3_1` |
+| 13-fashion-lookbook | `cinematic_studio_video_v2` | `seedance_2_0` |
+| 14-food-beverage | `seedance_2_0` | `marketing_studio_video` |
+| 15-real-estate | `cinematic_studio_3_0` | `veo3_1` |
 
-### 示例 Example
+---
+
+## Opt-In Generation
+
+**Generation never happens automatically.** Every skill follows this confirmation-gated flow:
+
+1. **Build prompt** — Claude gathers your creative brief and produces a production-ready prompt with camera, lighting, timeline, and sound design details.
+2. **Confirm** — Claude presents the assembled prompt, chosen model, parameters, and current credit cost/balance. You approve or adjust before anything is submitted.
+3. **Generate** — On explicit confirmation, Claude calls the Higgsfield MCP server (`higgsfield:generate_video` or `higgsfield:generate_image`).
+4. **Poll + display** — Claude monitors `higgsfield:job_status` until complete, then presents the result via `higgsfield:job_display`.
+
+For skills that work with your uploaded media (04-comic-to-video, 08-anime-action, 09-product-360, 10-music-video), the flow also includes `higgsfield:media_upload` → `higgsfield:media_confirm` before the generation call.
+
+---
+
+## Output Constraints
+
+Video output is up to **1080p**. There is no 4K video output and no `.webm` container. The `4k` value that appears in some model parameter enums (e.g. `kling3_0` mode) is a generation-pipeline setting, not an output-resolution guarantee.
+
+Per-model constraints (aspect ratios, duration ranges, parameters) are documented in each skill's `references/model-specs.md` and sourced from live `models_explore` data verified 2026-05-24/25. At generation time, each skill calls `higgsfield:models_explore` to confirm the live schema before submitting.
+
+---
+
+## The Higgsfield Model Ecosystem
+
+Approximately **38 models** aggregated from multiple providers, all accessible through one Higgsfield MCP server:
+
+| Category | Count | Providers / families |
+|----------|-------|---------------------|
+| Video | ~18 | Higgsfield (Seedance 2.0/1.5, Cinematic Studio 3.0, Marketing Studio Video, Cinematic Studio Video v1/v2), Google (Veo 3, Veo 3.1, Veo 3.1 Lite), Bytedance (Wan 2.6, Wan 2.7), Kuaishou (Kling 2.6, Kling 3.0), xAI (Grok Video), MiniMax (Hailuo), Higgsfield Preset |
+| Image | ~20 | Higgsfield (Nano Banana / 2 / Pro, Soul 2 / Cinematic / Cast / Location, Cinematic Studio 2.5, Marketing Studio Image, MS Image), Bytedance (Seedream v4.5, v5 Lite), Black Forest Labs (Flux 2, Flux Kontext), OpenAI (GPT Image, GPT Image 2), Kuaishou (Kling Omni Image), xAI (Grok Image), Z Image, Image Auto |
+
+Model parameters, aspect ratios, and duration ranges vary by model and can change as Higgsfield updates its platform. Always treat the live `models_explore` catalog as the source of truth.
+
+---
+
+## Install
+
+### Prerequisites
+
+- [Claude Code](https://claude.ai/code) or Claude Desktop (macOS / Linux)
+- The Higgsfield MCP server configured in your Claude environment (for generation — prompt-building works without it)
+
+### Quick install
+
+```bash
+git clone https://github.com/higgsfield-ai/higgsfield-skills.git
+cd higgsfield-skills
+chmod +x install.sh
+./install.sh          # Interactive — pick which skills to install
+```
+
+### Install all skills at once
+
+```bash
+./install.sh --all
+```
+
+Skills are installed to `~/.claude/skills/` (personal scope — works for both Claude Code and Claude Desktop on macOS and Linux). The `shared/` reference directory installs to `~/.claude/shared/`.
+
+### Other options
+
+```bash
+./install.sh --list                   # List all 15 skills with descriptions
+./install.sh --target project         # Install into ./.claude/skills/ (project-scoped, committable)
+./install.sh --target code            # Explicit personal install (same as default)
+./install.sh --target desktop         # Same path as code — both surfaces use ~/.claude/skills/
+./install.sh --help                   # Full usage reference
+```
+
+### Project-scoped install
+
+Commit `.claude/skills/` and `.claude/shared/` to your repo and anyone who opens it in Claude Code gets all the skills automatically — no script required.
+
+### Windows
+
+Automatic install is not supported. Copy `skills/<skill-name>/` manually to `%APPDATA%\.claude\skills\<skill-name>\` and `shared/` to `%APPDATA%\.claude\shared\`.
+
+### After install
+
+If you created `~/.claude/skills/` for the first time, restart Claude Code or Claude Desktop for skills to appear. Edits to existing installed skills take effect immediately without a restart.
+
+---
+
+## Repository Structure
 
 ```
-你: 我需要一个 15 秒电影风格视频，孤独武士在黎明雾气竹林中行走
-You: I need a 15s cinematic video of a lone samurai walking through foggy bamboo forest at dawn
-
-Claude (使用电影技能 with cinematic skill):
-→ 生成 25+ 行详细提示词 Generates 25+ line detailed prompt
-→ 包含时间线、镜头、灯光、声音、2 秒钩子 With timeline, camera, lighting, sound, 2-second hook
-```
-
----
-
-## 📋 Seedance 2.0（Higgsfield）参数规格 Specs
-
-| 输入 Input | 格式 Format | 限制 Limit |
-|---|---|---|
-| 图片 Image | jpeg, png, webp, bmp, tiff, gif | ≤ 9 个, 每个 < 30MB |
-| 视频 Video | mp4, mov | ≤ 3 个, 每个 < 50MB, 总时长 2–15s |
-| 音频 Audio | mp3, wav | ≤ 3 个, 每个 < 15MB, 总时长 ≤ 15s |
-| 文本 Text | 自然语言 Natural language | — |
-| **合计 Combined** | — | **≤ 12 个文件 files** |
-| **输出 Output** | 视频 Video | **4–15s, 720p, 含声音 with sound** |
-
-素材引用 Reference materials: `@image1` `@video1` `@audio1`
-
----
-
-## 📁 仓库结构 Repository Structure
-
-```
-higgsfield-seedance2-jineng/
-├── README.md                          # 双语说明 Bilingual readme (this file)
+higgsfield-skills/
+├── README.md
 ├── LICENSE
+├── install.sh                         # Installer (macOS / Linux)
+├── assets/
+│   └── banner.svg
+├── shared/                            # Cross-skill references (installed to ~/.claude/shared/)
+│   ├── model-catalog.md               # All ~38 Higgsfield models, verified 2026-05-24
+│   ├── generation-flow.md             # Canonical opt-in generation workflow
+│   ├── skill-template.md              # SKILL.md authoring template + frontmatter rules
+│   └── mcp-tools.md                   # Higgsfield MCP tool signatures
 └── skills/
     ├── 01-cinematic/
-    │   └── SKILL.md
+    │   ├── SKILL.md
+    │   └── references/
+    │       ├── model-specs.md         # Per-skill model parameters (verified from models_explore)
+    │       ├── camera.md
+    │       ├── hooks.md
+    │       └── examples.md
     ├── 02-3d-cgi/
     ├── 03-cartoon/
     ├── 04-comic-to-video/
@@ -143,35 +189,37 @@ higgsfield-seedance2-jineng/
     ├── 13-fashion-lookbook/
     ├── 14-food-beverage/
     └── 15-real-estate/
-        └── SKILL.md
+        ├── SKILL.md
+        └── references/
 ```
 
----
-
-## 📊 统计 Stats
-
-- **技能数量 Skills:** 15
-- **文件总数 Total files:** 15 SKILL.md
-- **语言 Languages:** English
+Each skill follows the same layout: a lean `SKILL.md` (model routing, generation workflow, links to references) and a `references/` directory with encyclopedic content loaded on demand.
 
 ---
 
-## 🤝 贡献 Contributing
+## Stats
 
-欢迎 PR！Welcome PRs!
-
-1. 遵循 SKILL.md 格式 | Follow SKILL.md format (YAML frontmatter + content)
-2. 包含 2 秒钩子框架 | Include the 2-Second Hook Framework
-3. 包含 5+ 大型示例 | Include 5+ large example prompts
-4. 在 [Seedance 2.0（Higgsfield）](https://higgsfield.ai/create/video?model=seedance_2_0) 上测试 | Test on Seedance 2.0 on Higgsfield
+- **Skills:** 15
+- **Files per skill:** SKILL.md + 4 reference files (model-specs, craft-specific, hooks, examples)
+- **Supported Higgsfield models:** ~38 (image + video)
+- **Language:** English
 
 ---
 
-## 🔗 相关资源 Related
+## Contributing
 
-- [Higgsfield](https://higgsfield.ai) — 平台主页 Platform home
-- [Seedance 2.0 创建视频 Create Video](https://higgsfield.ai/create/video?model=seedance_2_0) — 直接开始 Start now
-- [𝕏 @higgsfield](https://x.com/higgsfield) — 关注最新动态 Follow for updates
+1. Follow the `SKILL.md` format documented in `shared/skill-template.md` (YAML frontmatter `name` + `description`; body ≤ 500 lines)
+2. Keep encyclopedic content in one-level-deep `references/` files — do not chain references
+3. Source all model specs from `higgsfield:models_explore` — no hardcoded resolutions or formats
+4. Gate any generation behind explicit user confirmation
+5. Test that the skill loads and routes correctly in Claude Code before opening a PR
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full contributor guide.
+
 ---
 
-`seedance` `higgsfield` `ai-video` `claude-skills` `prompt-engineering` `视频生成` `技能集` `提示词工程`
+## Related
+
+- [Higgsfield](https://higgsfield.ai) — Platform home
+- [Higgsfield MCP](https://higgsfield.ai/mcp) — MCP server setup
+- [X @higgsfield](https://x.com/higgsfield) — Updates and releases

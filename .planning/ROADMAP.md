@@ -13,7 +13,7 @@
 - [x] **Phase 2: Pilot Skill (01-cinematic) End-to-End** — Validate the lean SKILL.md template, progressive disclosure structure, and the full opt-in generation loop on one skill before multiplying it across 14 more
 - [ ] **Phase 3: Bulk Refactor — Remaining 14 Skills** — Apply the validated pilot template to all remaining skills in dependency-aware order, adding the media_upload branch for the 4 I2V skills (04, 08, 09, 10)
 - [ ] **Phase 4: Install Script** — Revise install.sh to target the correct shared Claude Code + Desktop path, handle shared/ directory, add --all/--list/--target flags, idempotency
-- [ ] **Phase 5: Spec Accuracy Pass + Documentation** — Re-verify every model-specs.md against live models_explore, update verification dates, and rewrite README.md (English) to reflect the real structure
+- [x] **Phase 5: Spec Accuracy Pass + Documentation** — Re-verify every model-specs.md against live models_explore, update verification dates, and rewrite README.md (English) to reflect the real structure
 
 ---
 
@@ -98,4 +98,4 @@
 | 2. Pilot Skill (01-cinematic) End-to-End | 3/3 | ✅ Complete (verified 5/5) + refined post-review | 2026-05-25 |
 | 3. Bulk Refactor — Remaining 14 Skills | 0/6 | Planned | - |
 | 4. Install Script | 0/? | Not started | - |
-| 5. Spec Accuracy Pass + Documentation | 0/? | Not started | - |
+| 5. Spec Accuracy Pass + Documentation | 1/1 | Complete | 2026-05-25 |
