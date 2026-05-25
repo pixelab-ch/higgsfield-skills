@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contributing guide
+    url: https://github.com/pixelab-ch/higgsfield-skills/blob/main/CONTRIBUTING.md
+    about: How to add or fix a skill (SKILL.md format, model specs, opt-in generation).
+  - name: Need a custom AI system? — Pixelab
+    url: mailto:contact@pixelab.ch
+    about: Pixelab builds production AI systems like this one. Get in touch.
